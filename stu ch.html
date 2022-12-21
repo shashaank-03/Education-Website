@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignan's IIT - Student Chapter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/student_chapter.css">
+    <link rel="icon" href="img/title.png" type="image/icon type">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+  
+}
+
+.title {
+    font-size: 1.9em;
+    font-weight: bold;
+    color: rgb(102, 9, 9);
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    padding: 3px 0px;
+    text-align: center;
+    margin: 20px 0;
+}
+.boxes{
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.card{
+    margin-top: 20px;
+    width: 25vw;
+    height: 60vh;
+    background-color: rgba(221, 25, 25, 0.5);
+    padding: 2rem 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+    margin-top: 40px;
+    border-radius: 10px;
+    
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(232, 240, 240, 0.5),rgb(31, 156, 170));
+    z-index: 2;
+    transform: 0.5s all;
+    opacity: 0;
+}
+.card:hover::before{
+    opacity: 1;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.card .info{
+    z-index: 3;
+    opacity: 0;
+    position: relative;
+    transform: translateY(-20px);
+    transition: 0.4s all;
+}
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+    backdrop-filter: blur(6px);
+}
+.card .info h1{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(227, 27, 23);
+    font-weight: bold;
+    padding: 10px;
+}
+.card .info p{
+    letter-spacing: 1px;
+    font-size: 19px;
+    margin-top: 8px;
+    color: #fff;
+    text-align: center;
+  
+}
+    </style>
+</head>
+<body>
+    
+    <div class="Student-chapter">
+        <div class="title">
+            Student Chapter
+        </div>
+        <div class="boxes">
+            <div class="card">
+                <img src="gfg.png">
+                <div class="info">
+                    <h1>GFG</h1>
+                    <p>GeeksforGeeks was created with a goal to provide well written,
+                        thought and explained solutions for selected questions.
+                        The core team of five geeks constituting of technology lovers and computer 
+                        science enthusiasts have been constantly working in this direction.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="gdsc.jpg">
+                <div class="info">
+                    <h1>GDSC</h1>
+                    <p>Google Developers Student Clubs (GDSC) are community
+                        groups for college,university students interested in Google Developer
+                        technologies.Students from undergraduate,graduate programs
+                        with an interest in growing as a developer are welcome.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="codechef.jpg">
+                <div class="info">
+                    <h1>Codechef</h1>
+                    <p>Code-Chef is online educational program,competitive programming community
+                        of global programmers.Code-Chef started as an educational initiative in 2009 
+                        by Directi,an Indian software company>In 2020,it became
+                        owned by Unacademy
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

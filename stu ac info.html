@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignan's IIT - Student Academic Information</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/student_academic_information.css">
+    <link rel="icon" href="img/title.png" type="image/icon type">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #43c5c5;
+}
+/* nav ul .btn{
+    font-weight: bold;
+    background-color: rgb(217, 218, 224);
+}
+.header nav{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    z-index: 100;
+    
+}
+nav .logo{
+    height: 10vh;
+    margin: 0 auto;
+}
+nav ul{
+    width: 80%;
+    border-radius: 5px;
+    height: 8vh;
+    margin-right: 5px;
+    background-color: rgb(9, 135, 252);
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 7px 5px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 520;
+}
+nav ul :hover{
+    background-color: rgb(41, 85, 229);
+} */
+.reg{
+    margin: auto;
+    width: 750px;
+    
+    margin-top: 10px;
+    max-width: 100%;
+    padding: 25px 30px;
+    border-radius: 10px;
+    background-color: #ecf0f3;
+    box-shadow:13px 13px 20px#cbcde1 ; 
+ 
+}
+.reg .title{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold ;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    color: rgb(236, 95, 56);
+    word-spacing: 6px;
+    
+}
+
+.reg form .user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(175, 33, 33);
+}
+.reg form .user .input{
+    width: calc(100% / 2 - 20px);
+    margin: 5px;
+    padding:4px ;
+    
+}
+.reg form .user .input input{
+    font-family: 'Sans-serif';
+    height: 40px;
+    width: 100%;
+    padding: 5px 15px;
+    margin: 8px;
+    font-size: 1.1vw;
+    border-radius: 6px;
+    border:#555;
+    outline: none;
+    color: #555;
+    background: #fff;
+    box-shadow:8px 8px 8px#cbcde1 ;
+}
+.select{
+    font-family: 'Sans-serif';
+    height: 40px;
+    width: 100%;
+    padding: 5px 15px;
+    margin: 8px;
+    font-size: 1.1vw;
+    border-radius: 6px;
+    border:#555;
+    outline: none;
+    color: #555;
+    background: #fff;
+    box-shadow:8px 8px 8px#cbcde1 ;
+
+}
+.select:hover{
+    transition: 0.3s;
+    border: 1.5px solid rgb(219, 11, 29);
+
+}
+.select option{
+    color: rgb(224, 60, 39);
+}
+.reg form .user .input input:hover{
+    transition: 0.3s;
+    border: 1.5px solid rgb(118, 173, 233);
+}
+
+.reg form .user .input .userd{
+    font-size: 17px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    font-weight : 600;
+}
+.sub{
+    width: 100%;
+}
+.sub input{
+    width: 85%;
+    height: 40px;
+   margin-left: 50px;
+   margin-top:15px;
+   border-radius: 5px;
+   font-size: 20px;
+   font-weight: bold;
+   border: 1px solid #fff;
+   color: #fff;
+   letter-spacing: 4px;
+   background-color: #8d3939;
+   cursor: pointer;
+}
+.sub input:hover{
+    background: #882424;
+    transition: 0.3s;
+}
+    </style>
+</head>
+<body>
+    <!-- <div class="header" >
+        <nav id="navbar">
+            <img src="img/logo.png" class="logo">
+            <ul id="menu">
+                <li><a  href="index.html">Home</a></li>
+                <li ><a  href="departments.html">Departments</a></li>
+                <li ><a  href="faculty.html">Faculty</a></li>
+                <li class="btn"><a  href="student_chapter.html">Student</a></li>
+                <li><a  href="placement.html">Placement</a></li>
+                <li><a  href="login.html">Login</a></li>
+                <li><a  href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </div> -->
+    <div class="reg">
+        <div class="title">Student Academic Info</div>
+    <form  name="form" >
+        <div class="user">
+            <div class="input">
+                <span class="userd">First Name</span>
+                <input class="in" type="text" name="uiname" placeholder="Enter Your First Name" required>
+            </div>
+            <div class="input">
+                <span class="userd">Last Name</span>
+                <input class="in"type="text" name="fname" placeholder="Enter Your Last Name" required>
+            </div>
+           
+             <div class="input">
+                <span class="userd">Registration Number </span>
+                <input class="in" type="text" name="Registration Number" placeholder="Enter Your Registration Number" required>
+            </div>
+            <div class="input">
+                <span class="userd">Branch </span>
+                <select class="select" id="branch">
+                    <option value="Branch">Select Branch</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+                <div class="input">
+                    <span class="userd">SEM 1 Marks </span>
+                    <input class="in" type="text" name="Registration Number" placeholder="Enter Your SEM 1 Marks" required>
+                </div>
+                <div class="input">
+                    <span class="userd">SEM 2 Marks</span>
+                    <input class="in" type="text" name="Registration Number" placeholder="Enter Your SEM 2 Marks" required>
+                </div>
+                <div class="input">
+                    <span class="userd">SEM 3 Marks </span>
+                    <input class="in" type="text" name="Registration Number" placeholder="Enter Your SEM 3 Marks" required>
+                </div>
+                <div class="input">
+                    <span class="userd">SEM 4 Marks</span>
+                    <input class="in" type="text" name="Registration Number" placeholder="Enter Your SEM 4 Marks" required>
+                </div>
+                <div class="input">
+                    <span class="userd">SEM 5 Marks </span>
+                    <input class="in" type="text" name="Registration Number" placeholder="Enter Your SEM 5 Marks" required>
+                </div>
+                <div class="input">
+                    <span class="userd">SEM 6 Marks</span>
+                    <input class="in" type="text" name="Registration Number" placeholder="Enter Your SEM 6 Marks" required>
+                </div>
+                <div class="input">
+                    <span class="userd">SEM 7 Marks </span>
+                    <input class="in" type="text" name="Registration Number" placeholder="Enter Your SEM 7 Marks" required>
+                </div>
+                <div class="input">
+                    <span class="userd">SEM 8 Marks</span>
+                    <input class="in" type="text" name="Registration Number" placeholder="Enter Your SEM 8 Marks" required>
+                </div>
+            <div class="sub">
+                <input class="in" type="submit" value="SUBMIT"  required>
+            </div>
+         
+        </div>
+        
+    </form>
+</div>
+
+</body>
+</html>
